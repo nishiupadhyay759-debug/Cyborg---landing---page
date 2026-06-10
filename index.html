@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyborg X - Future Begins</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Orbitron',sans-serif;
+}
+
+body{
+    background:#050816;
+    color:white;
+    overflow-x:hidden;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    flex-direction:column;
+    background:
+    radial-gradient(circle at center,#00f7ff22,#050816);
+}
+
+.hero h1{
+    font-size:4rem;
+    color:#00f7ff;
+    text-shadow:0 0 20px #00f7ff;
+}
+
+.hero p{
+    max-width:700px;
+    margin:20px auto;
+    color:#cfcfcf;
+    line-height:1.6;
+}
+
+.btn{
+    padding:15px 35px;
+    border:none;
+    border-radius:40px;
+    background:#00f7ff;
+    color:#000;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.4s;
+    box-shadow:0 0 25px #00f7ff;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+}
+
+.features{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    color:#00f7ff;
+    margin-bottom:50px;
+    font-size:2.5rem;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(0,247,255,0.3);
+    padding:30px;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px #00f7ff;
+}
+
+.card h3{
+    color:#00f7ff;
+    margin-bottom:15px;
+}
+
+.stats{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+}
+
+.stat{
+    padding:30px;
+    border-radius:20px;
+    background:#0d1227;
+    border:1px solid #00f7ff55;
+}
+
+.stat h2{
+    color:#00f7ff;
+    font-size:3rem;
+}
+
+.footer{
+    text-align:center;
+    padding:40px;
+    border-top:1px solid #00f7ff33;
+    color:#aaa;
+}
+
+.glow{
+    position:fixed;
+    width:300px;
+    height:300px;
+    background:#00f7ff22;
+    filter:blur(100px);
+    border-radius:50%;
+    top:20%;
+    left:10%;
+    z-index:-1;
+}
+
+.glow2{
+    position:fixed;
+    width:300px;
+    height:300px;
+    background:#7a00ff22;
+    filter:blur(100px);
+    border-radius:50%;
+    bottom:10%;
+    right:10%;
+    z-index:-1;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:2.5rem;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="glow"></div>
+<div class="glow2"></div>
+
+<section class="hero">
+    <h1>CYBORG X</h1>
+    <p>
+        Experience the future of human-machine intelligence.
+        Advanced AI systems, neural enhancements and cybernetic
+        innovations designed for the next generation.
+    </p>
+
+    <button class="btn">Enter The Future</button>
+</section>
+
+<section class="features">
+    <h2 class="section-title">Cyber Features</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>AI Integration</h3>
+            <p>Smart neural systems powered by advanced artificial intelligence.</p>
+        </div>
+
+        <div class="card">
+            <h3>Neural Interface</h3>
+            <p>Direct brain-machine communication for seamless control.</p>
+        </div>
+
+        <div class="card">
+            <h3>Quantum Security</h3>
+            <p>Future-proof encryption and cyber defense systems.</p>
+        </div>
+
+        <div class="card">
+            <h3>Augmented Vision</h3>
+            <p>Enhanced reality overlays with real-time data insights.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="stats">
+    <h2 class="section-title">Performance Metrics</h2>
+
+    <div class="stats-grid">
+
+        <div class="stat">
+            <h2>99%</h2>
+            <p>AI Accuracy</p>
+        </div>
+
+        <div class="stat">
+            <h2>24/7</h2>
+            <p>System Uptime</p>
+        </div>
+
+        <div class="stat">
+            <h2>10X</h2>
+            <p>Processing Speed</p>
+        </div>
+
+        <div class="stat">
+            <h2>500K+</h2>
+            <p>Connected Devices</p>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2025 CYBORG X | The Future Is Now</p>
+</footer>
+
+</body>
+</html>
